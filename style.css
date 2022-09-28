@@ -1,0 +1,152 @@
+html, body {
+	width: 100%;
+	font-family: Verdana;
+	background-image: url("woodPanelProj.jpeg");
+	background-size: 30em;
+}
+
+/* This is to center the body */
+/* Found from https://stackoverflow.com/questions/6464592/how-to-align-entire-html-body-to-the-center */
+html {
+    display: table;
+    margin: auto;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #1d6733;
+	flex-direction: row;
+	display: flex;
+  	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+/*When the viewport is 800px or smaller, stack menu */
+  	.menu {
+    	width: 100%; 
+		flex-direction: column;
+		align-items: stretch;
+  	}
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	padding: 14px 100px;
+	text-decoration: none;
+	font-size: 2vw;
+/* 	This sets the minimum font size to 12 px */
+/*	Found from: https://stackoverflow.com/questions/23984629/how-to-set-min-font-size-in-css */
+}
+
+li a:hover {
+  	background-color: #f0efef;
+	color: #1d6733;
+}
+
+.current {
+	background-color: #f0efef;
+	color: #1d6733;
+}
+
+.home {
+	padding: 20px;
+	text-align: center;
+	background: #f0efef;
+	color: #1d6733;
+	opacity: 0.9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-style: solid;
+	border-width: 0.5vw;
+	border-color: #1d6733;
+}
+
+.contact {
+	text-align: left;
+}
+
+.image {
+	flex-basis: 40%
+}
+
+img {
+	height: 30vw;
+}
+
+.text {
+	font-size: 2vw;
+	padding-left: 20px;
+	width: 50%;
+}
+
+.button {
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	padding: 2vw 2vw;
+	text-decoration: none;
+	font-size: 1.5vw;
+	background-color: #1d6733;
+	border-style: double;
+	border-width: 1vw;
+	border-color: #f0efef;
+}
+
+
+h1 {
+	color: #1d6733;
+	font-family: Verdana;
+	font-size: 4vw;
+}
+
+h3 {
+	color: #1d6733;
+	font-family: Verdana;
+	font-size: 5vw;
+}
+
+.embedded {
+	text-decoration: none;
+	color: #1d6733;
+	font-weight: bold;
+}
+
+.footer {
+	padding: 2vw;
+	color: #f0efef;
+	background: #1d6733;
+	/*align-items: stretch;*/
+	display: flex;
+}
+
+.foot_left {
+	text-align: left;
+	display: inline-block;
+	font-size: 1.5vw;
+	left: 0px;
+	width: 50%;
+}
+
+.foot_right {
+	float: right;
+	text-align: right;
+	font-size: 3vw;
+	right: 0px;
+	width: 50%;
+}
